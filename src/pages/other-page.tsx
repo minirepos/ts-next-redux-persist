@@ -1,5 +1,5 @@
-import Link from 'next/Link'
 import { useSelector } from 'react-redux'
+import Link from 'next/Link'
 
 import { useAppDispatch, RootState as S } from '../redux/store'
 import { setIsDarkMode } from '../redux/reducers'
@@ -13,8 +13,8 @@ const IndexPage = () => {
       <button onClick={() => dispatch(setIsDarkMode(!isDarkMode))}>
         {isDarkMode ? 'Dark' : 'Light'}
       </button>
-      <Link href="/other-page">
-        <a>Page 2</a>
+      <Link href="/">
+        <a>Page 1</a>
       </Link>
     </div>
   )
